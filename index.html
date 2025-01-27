@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Library</title>
+</head>
+<body>
+  <header>
+    <div class="logo">MY BOOKS</div>
+  </header>
+  <form onsubmit="submitInputs(event)" class="userInput" id="userInput">
+    <label for="titleInput">Title</label>
+    <input type="text" name="" id="titleInput" required>
+
+    <label for="authorInput">Author</label>
+    <input type="text" id="authorInput" required>
+
+    <label for="pagesInput">pages</label>
+    <input type="number" name="" id="pagesInput" required>
+
+    <label for="textArea">textArea</label>
+    <textArea class="textArea" id="textArea" required></textArea>
+    
+    <div class="checkboxWrapper"">
+      <label for="checkbox">Read</label>
+      <input type="checkbox" class="checkbox" id="checkbox">
+    </div>
+
+    <button class="submit" id="submit">
+      Submit
+    </button>
+
+  </form>
+
+
+  <div class="shelf" id="shelf">
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

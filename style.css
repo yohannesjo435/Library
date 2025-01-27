@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(240, 248, 255, 0.356);
+  margin-bottom: 50px;
+}
+
+.shelf {
+  width: 80vw;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 0 auto;
+}
+.card {
+  font-family: monospace;
+  font-size: 14px;
+  outline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+.readBtn{
+  outline: none;
+  border: 1px solid;
+  width: 100px;
+  height: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  background-color: lightblue;
+}
+.active {
+  background-color: black;
+  color: white;
+}
+
+.userInput {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  align-items: center;
+  margin: 0 auto 50px;
+  gap: 10px;
+  outline: auto;
+}
+.userInput input, label, textarea {
+  height: 20px;
+  width: 80%;
+}
+.submit {
+  outline: none;
+  border: 1px solid;
+  width: 100px;
+  height: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  background-color: lightblue;
+}
+
+.textArea {
+  height: 40px;
+}
+
+.btnWrapper{
+  display: flex; 
+  width: 80%; 
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.checkboxWrapper {
+  display: flex;
+  font-size: 20px;
+  column-gap: 15px;
+  /* outline: auto; */
+}
+.checkboxWrapper label{
+  font-size: 20px;
+  column-gap: 10px;
+}
+.checkbox {
+  margin-top: 2.2px;
+  transform: scale(1.1);
+}
